@@ -8,7 +8,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "ng build && npx angular-cli-ghpages --dir=dist/traveler-angular-app --branch=master"
-
   },
   "prettier": {
     "overrides": [
