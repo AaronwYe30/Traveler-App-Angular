@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* Soft blue sky to sandy beach gradient for travel theme */
+  background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 50%, #fceabb 100%);
+  color: #2d3a4a; /* Deep blue for readability */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

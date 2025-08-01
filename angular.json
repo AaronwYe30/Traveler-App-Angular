@@ -19,6 +19,8 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/favicon.ico",
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -29,8 +31,7 @@
             ],
             "baseHref": "/Traveler-App-Angular/",
             "outputPath": "dist/traveler-angular-app",
-            "index": "src/index.html",
-            "main": "src/main.ts"
+            "index": "src/index.html"
           },
           "configurations": {
             "production": {
@@ -89,6 +90,9 @@
               "src/styles.css"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
