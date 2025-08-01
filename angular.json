@@ -26,7 +26,11 @@
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "baseHref": "/Traveler-App-Angular/",
+            "outputPath": "dist/traveler-angular-app",
+            "index": "src/index.html",
+            "main": "src/main.ts"
           },
           "configurations": {
             "production": {
