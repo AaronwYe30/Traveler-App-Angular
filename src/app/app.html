@@ -1,39 +1,54 @@
 <app-header />
 <main>
-  <ul id="users">
+  <ul id="continents">
     <li>
-      <app-user
-        [id]="users[0].id"
-        [avatar]="users[0].avatar"
-        [name]="users[0].name"
-        (select)="onSelectUser($event)"
+      <app-continents
+        [id]="continent[0].id"
+        [avatar]="continent[0].avatar"
+        [name]="continent[0].name"
+        (select)="onSelectContinent($event)"
       />
     </li>
     <li>
-      <app-user
-        [id]="users[1].id"
-        [avatar]="users[1].avatar"
-        [name]="users[1].name"
-        (select)="onSelectUser($event)"
+      <app-continents
+        [id]="continent[1].id"
+        [avatar]="continent[1].avatar"
+        [name]="continent[1].name"
+        (select)="onSelectContinent($event)"
       />
     </li>
     <li>
-      <app-user
-        [id]="users[2].id"
-        [avatar]="users[2].avatar"
-        [name]="users[2].name"
-        (select)="onSelectUser($event)"
+      <app-continents
+        [id]="continent[2].id"
+        [avatar]="continent[2].avatar"
+        [name]="continent[2].name"
+        (select)="onSelectContinent($event)"
       />
     </li>
     <li>
-      <app-user
-        [id]="users[3].id"
-        [avatar]="users[3].avatar"
-        [name]="users[3].name"
-        (select)="onSelectUser($event)"
+      <app-continents
+        [id]="continent[3].id"
+        [avatar]="continent[3].avatar"
+        [name]="continent[3].name"
+        (select)="onSelectContinent($event)"
+      />
+    </li>
+    <li>
+      <app-continents
+        [id]="continent[4].id"
+        [avatar]="continent[4].avatar"
+        [name]="continent[4].name"
+        (select)="onSelectContinent($event)"
+      />
+    </li>
+    <li>
+      <app-continents
+        [id]="continent[5].id"
+        [avatar]="continent[5].avatar"
+        [name]="continent[5].name"
+        (select)="onSelectContinent($event)"
       />
     </li>
   </ul>
-
-  TASK OF USER
+  <app-task [name]="selectContinent.name" />
 </main>

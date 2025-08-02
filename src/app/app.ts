@@ -1,19 +1,25 @@
 import { Component, signal } from '@angular/core';
 import { Header } from "./header/header";
-import { User } from "./user/user";
 import { DUMMY_USERS } from './dummy-users';
+import { Task } from "./task/task";
+import { Continents } from './continent/continents';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Header, User],
+  imports: [Header, Continents, Task],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  users = DUMMY_USERS;
+  continent = DUMMY_USERS;
+  selectedContinentId = 'u1'
 
-  onSelectUser(id: string) {
-    console.log('Selected User ID:', id);
+  get selectContinent() {
+    return this.continent.find((continent) => continent.id === this.selectedContinentId)!;
+  }
+
+  onSelectContinent(id: string) {
+    this.selectedContinentId = id;
   }
 }
