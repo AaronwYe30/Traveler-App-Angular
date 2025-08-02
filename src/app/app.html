@@ -49,6 +49,14 @@
         (select)="onSelectContinent($event)"
       />
     </li>
+    <li>
+      <app-continents
+        [id]="continent[6].id"
+        [avatar]="continent[6].avatar"
+        [name]="continent[6].name"
+        (select)="onSelectContinent($event)"
+      />
+    </li>
   </ul>
   <app-task [name]="selectContinent.name" />
 </main>

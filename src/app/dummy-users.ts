@@ -29,4 +29,9 @@ export const DUMMY_USERS = [
     name: 'Australia',
     avatar: 'australia.jpg',
   },
+    {
+    id: 'u7',
+    name: 'Antarctica',
+    avatar: 'antarctica.jpg',
+  },
 ];
