@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { Header } from "./header/header";
 import { User } from "./user/user";
+import { DUMMY_USERS } from './dummy-users';
 
 
 @Component({
@@ -10,5 +11,5 @@ import { User } from "./user/user";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('traveler-angular-app');
+  users = DUMMY_USERS;
 }
