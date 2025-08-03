@@ -1,5 +1,11 @@
 import { Component, EventEmitter, Input, Output} from '@angular/core';
 
+interface Continent {
+  id: string;
+  name: string;
+  avatar: string;
+}
+
 @Component({
   selector: 'app-continents',
   imports: [],
@@ -7,16 +13,15 @@ import { Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrl: './continents.css'
 })
 export class Continents {
-  @Input({ required: true}) id!: string;
-  @Input({required: true}) avatar!: string;
-  @Input({required: true}) name!: string;
+  @Input({required: true}) continent!: Continent;
+
   @Output() select = new EventEmitter<string>();
 
   get imagePath() {
-    return 'assets/continents/' + this.avatar;
+    return 'assets/continents/' + this.continent.avatar;
   }
 
   onSelectContinents() {
-    this.select.emit(this.id);
+    this.select.emit(this.continent.id);
   }
 }

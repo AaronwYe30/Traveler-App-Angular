@@ -12,11 +12,11 @@ import { Continents } from './continent/continents';
   styleUrl: './app.css'
 })
 export class App {
-  continent = DUMMY_USERS;
-  selectedContinentId = 'u1'
+  continents = DUMMY_USERS;
+  selectedContinentId?: string;
 
   get selectContinent() {
-    return this.continent.find((continent) => continent.id === this.selectedContinentId)!;
+    return this.continents.find((continent) => continent.id === this.selectedContinentId)!;
   }
 
   onSelectContinent(id: string) {
