@@ -1,12 +1,12 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-
+import { Task } from './task/task';
 @Component({
-  selector: 'app-task',
-  imports: [],
-  templateUrl: './task.html',
-  styleUrl: './task.css'
+  selector: 'app-tasks',
+  imports: [Task],
+  templateUrl: './tasks.html',
+  styleUrl: './tasks.css'
 })
-export class Task {
+export class Tasks {
   @Input() name?: string;
   @Output() select = new EventEmitter<string>();
 

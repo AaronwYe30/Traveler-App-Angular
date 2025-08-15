@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { Header } from "./header/header";
 import { DUMMY_USERS } from './dummy-users';
-import { Task } from "./task/task";
+import { Tasks } from "./tasks/tasks";
 import { Continents } from './continent/continents';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Continents, Task],
+  imports: [Header, Continents, Tasks],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
